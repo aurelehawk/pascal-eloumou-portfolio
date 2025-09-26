@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://pascal-eloumou-data-analyst.com/sitemap.xml
+
+# Optimisation pour les moteurs de recherche
+# Autoriser l'indexation de tous les contenus
+Allow: /index.html
+Allow: /styles.css
+Allow: /script.js
+
+# Interdire l'indexation des fichiers temporaires
+Disallow: /*.tmp
+Disallow: /*.log
+Disallow: /node_modules/
+
+# Crawl-delay pour éviter la surcharge
+Crawl-delay: 1

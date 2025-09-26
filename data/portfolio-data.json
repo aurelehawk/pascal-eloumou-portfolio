@@ -1,0 +1,243 @@
+{
+  "profile": {
+    "name": "Pascal Aurele ELOUMOU",
+    "title": "Data Analyst & Expert Intelligence Artificielle",
+    "description": "Data Analyst et Expert Intelligence Artificielle avec 10 années d'expérience, spécialisé dans l'automatisation des pipelines de données, le Machine Learning, l'analyse prédictive et l'optimisation des processus métier. Expert en Python, SQL, Snowflake et Power BI.",
+    "about": "Fort de 10 années d'expérience en analyse de données et intelligence artificielle, je me spécialise dans l'automatisation des pipelines ETL, le Machine Learning, l'analyse prédictive et l'optimisation des processus métier. Mon expertise de Data Analyst couvre l'ensemble de la chaîne de valeur data : ingestion de données, transformation ETL, modélisation prédictive, visualisation de données avec Power BI, et déploiement de solutions Big Data sur Snowflake et BigQuery.",
+    "photo": "profile-photo.jpg",
+    "cv_file": "cv-pascal-eloumou.pdf",
+    "location": "Région parisienne, France",
+    "email": "pascal.eloumou@email.com",
+    "phone": "+33 6 XX XX XX XX",
+    "linkedin": "https://linkedin.com/in/pascal-eloumou",
+    "github": "https://github.com/pascal-eloumou",
+    "twitter": "https://twitter.com/pascal-eloumou"
+  },
+  "experiences": [
+    {
+      "id": "exp_1",
+      "company": "ENEO",
+      "position": "Data Analyst & Solution IA",
+      "period": "2022 - Présent",
+      "location": "Paris, France",
+      "type": "CDI",
+      "sections": {
+        "context": "Intégration au sein de l'équipe Data Science d'ENEO pour développer des solutions d'intelligence artificielle et d'analyse de données dans le secteur énergétique.",
+        "missions": "Développement de modèles prédictifs pour l'optimisation énergétique, automatisation des pipelines ETL, création de tableaux de bord Power BI, analyse des données de consommation énergétique.",
+        "projects": "Projet de prédiction de consommation énergétique avec Machine Learning, migration des données vers Snowflake, développement d'APIs de données avec Python/FastAPI.",
+        "results": "Réduction de 25% des coûts d'analyse, amélioration de 40% de la précision des prédictions énergétiques, automatisation de 80% des rapports manuels."
+      }
+    },
+    {
+      "id": "exp_2",
+      "company": "Manpower",
+      "position": "Analyste et Data Engineer",
+      "period": "2020 - 2022",
+      "location": "Paris, France",
+      "type": "Alternance",
+      "sections": {
+        "context": "Mission en alternance au sein de l'équipe Data de Manpower pour développer l'infrastructure de données et les capacités d'analyse.",
+        "missions": "Conception et développement de pipelines ETL, analyse des données RH, création de modèles prédictifs pour le recrutement, optimisation des bases de données.",
+        "projects": "Développement d'un système de matching candidat-poste avec IA, migration vers BigQuery, création de dashboards Power BI pour les équipes RH.",
+        "results": "Amélioration de 30% de l'efficacité du matching, réduction de 50% du temps de traitement des données, formation de 15 collaborateurs aux outils BI."
+      }
+    },
+    {
+      "id": "exp_3",
+      "company": "Carrefour",
+      "position": "Data Analyst Junior",
+      "period": "2018 - 2020",
+      "location": "Massy, France",
+      "type": "Stage puis CDD",
+      "sections": {
+        "context": "Intégration dans l'équipe Analytics de Carrefour pour analyser les données de vente et optimiser les performances commerciales.",
+        "missions": "Analyse des données de vente, création de rapports automatisés, développement de modèles de prévision des stocks, support aux équipes métier.",
+        "projects": "Système de prévision des ventes avec Python, automatisation des rapports hebdomadaires, analyse de la saisonnalité des produits.",
+        "results": "Réduction de 20% des ruptures de stock, automatisation de 60% des rapports manuels, amélioration de 15% de la précision des prévisions."
+      }
+    }
+  ],
+  "education": [
+    {
+      "id": "edu_1",
+      "institution": "École Supérieure de Data Science",
+      "degree": "Master en Data Science et Intelligence Artificielle",
+      "period": "2016 - 2018",
+      "location": "Paris, France",
+      "description": "Formation approfondie en Machine Learning, Deep Learning, statistiques avancées et big data."
+    },
+    {
+      "id": "edu_2",
+      "institution": "Université Paris-Saclay",
+      "degree": "Licence en Mathématiques Appliquées",
+      "period": "2013 - 2016",
+      "location": "Orsay, France",
+      "description": "Solides bases en mathématiques, statistiques et programmation."
+    }
+  ],
+  "certifications": [
+    {
+      "id": "cert_1",
+      "name": "Snowflake SnowPro Core Certification",
+      "issuer": "Snowflake",
+      "date": "2023",
+      "credential_id": "SP-12345"
+    },
+    {
+      "id": "cert_2",
+      "name": "Google Cloud Professional Data Engineer",
+      "issuer": "Google Cloud",
+      "date": "2022",
+      "credential_id": "GCP-67890"
+    }
+  ],
+  "skills": {
+    "languages": {
+      "title": "Langages ★★★★★",
+      "items": [
+        {"name": "Python", "level": 95, "icon": "fab fa-python", "details": "Pandas, Numpy, Matplotlib, Scikit-learn, TensorFlow, PyTorch"},
+        {"name": "SQL", "level": 90, "icon": "fas fa-database", "details": "GoogleSQL, Snowflake SQL"},
+        {"name": "VBA", "level": 85, "icon": "fas fa-code"},
+        {"name": "DAX/M", "level": 80, "icon": "fas fa-chart-bar", "details": "Power BI"},
+        {"name": "Bash / PowerShell", "level": 75, "icon": "fas fa-terminal"},
+        {"name": "JavaScript", "level": 75, "icon": "fab fa-js", "details": "React Next.JS"},
+        {"name": "R", "level": 70, "icon": "fab fa-r-project"}
+      ]
+    },
+    "data_management": {
+      "title": "Data Management ★★★★★",
+      "items": [
+        {"name": "Dataiku", "level": 95, "icon": "fas fa-cogs"},
+        {"name": "Snowflake", "level": 90, "icon": "fas fa-snowflake"},
+        {"name": "Tableau", "level": 85, "icon": "fas fa-chart-line"},
+        {"name": "Power BI", "level": 90, "icon": "fas fa-chart-bar"},
+        {"name": "Looker", "level": 80, "icon": "fas fa-search"},
+        {"name": "Alteryx", "level": 75, "icon": "fas fa-stream"},
+        {"name": "Traitement données critiques", "level": 90, "icon": "fas fa-shield-alt", "details": "Banque, RH, RGPD"}
+      ]
+    },
+    "databases": {
+      "title": "Systèmes de gestion de BDD ★★★★★",
+      "items": [
+        {"name": "SQL Server", "level": 90, "icon": "fas fa-database"},
+        {"name": "PostgreSQL", "level": 85, "icon": "fas fa-elephant"},
+        {"name": "MongoDB", "level": 75, "icon": "fas fa-leaf"}
+      ]
+    },
+    "cloud": {
+      "title": "Cloud ★★★★★",
+      "items": [
+        {"name": "Google Cloud Platform", "level": 85, "icon": "fab fa-google"},
+        {"name": "AZURE Data Factory", "level": 80, "icon": "fab fa-microsoft"},
+        {"name": "AWS", "level": 75, "icon": "fab fa-aws"}
+      ]
+    },
+    "tools": {
+      "title": "Outils ★★★★★",
+      "items": [
+        {"name": "Jira", "level": 85, "icon": "fab fa-jira"},
+        {"name": "Gitlab", "level": 80, "icon": "fab fa-gitlab"},
+        {"name": "Kubernetes", "level": 75, "icon": "fas fa-dharmachakra"},
+        {"name": "Docker", "level": 80, "icon": "fab fa-docker"}
+      ]
+    },
+    "methodology": {
+      "title": "Méthodologie ★★★★★",
+      "items": [
+        {"name": "Agile", "level": 90, "icon": "fas fa-sync-alt"}
+      ]
+    },
+    "excel": {
+      "title": "Excel ★★★★★",
+      "items": [
+        {"name": "Excel avancé", "level": 95, "icon": "fas fa-file-excel", "details": "TCD, GCD, VBA"}
+      ]
+    },
+    "dataiku_advanced": {
+      "title": "Dataiku ★★★★★",
+      "items": [
+        {"name": "Recipes", "level": 95, "icon": "fas fa-cogs", "details": "prepare, filter, join, window, formula, group"},
+        {"name": "Dataiku DSS", "level": 90, "icon": "fas fa-project-diagram"},
+        {"name": "Automate machine learning", "level": 85, "icon": "fas fa-robot"},
+        {"name": "Modèles ML", "level": 90, "icon": "fas fa-brain", "details": "Random Forest et Gradient"}
+      ]
+    },
+    "ai_ml": {
+      "title": "Machine Learning & IA ★★★★★",
+      "items": [
+        {"name": "TensorFlow", "level": 85, "icon": "fas fa-robot"},
+        {"name": "PyTorch", "level": 80, "icon": "fas fa-fire"},
+        {"name": "Scikit-learn", "level": 90, "icon": "fas fa-brain"},
+        {"name": "AutoML", "level": 85, "icon": "fas fa-magic"},
+        {"name": "Keras", "level": 80, "icon": "fas fa-layer-group"},
+        {"name": "XGBoost", "level": 85, "icon": "fas fa-chart-line"}
+      ]
+    }
+  },
+  "certifications_detailed": [
+    {
+      "id": "cert_dataiku_1",
+      "name": "Dataiku Advanced Core Designer",
+      "issuer": "Dataiku",
+      "date": "2023",
+      "credential_id": "DK-ACD-2023",
+      "verified": true
+    },
+    {
+      "id": "cert_dataiku_2", 
+      "name": "Dataiku Core Designer",
+      "issuer": "Dataiku",
+      "date": "2022",
+      "credential_id": "DK-CD-2022",
+      "verified": true
+    },
+    {
+      "id": "cert_dataiku_3",
+      "name": "Dataiku Machine Learning Practitioner", 
+      "issuer": "Dataiku",
+      "date": "2023",
+      "credential_id": "DK-MLP-2023",
+      "verified": true
+    },
+    {
+      "id": "cert_dataiku_4",
+      "name": "Dataiku MLOps Practitioner",
+      "issuer": "Dataiku", 
+      "date": "2023",
+      "credential_id": "DK-MLOP-2023",
+      "verified": true
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_1",
+      "title": "Système de Prédiction Énergétique",
+      "description": "Développement d'un modèle de Machine Learning pour prédire la consommation énergétique avec une précision de 95%.",
+      "technologies": ["Python", "TensorFlow", "Snowflake", "Power BI"],
+      "github": "https://github.com/pascal-eloumou/energy-prediction",
+      "demo": "https://energy-prediction-demo.com",
+      "image": "project1.jpg"
+    },
+    {
+      "id": "proj_2",
+      "title": "Pipeline ETL Automatisé",
+      "description": "Création d'un pipeline ETL robuste pour traiter 10M+ de records quotidiennement avec monitoring en temps réel.",
+      "technologies": ["Python", "Apache Airflow", "BigQuery", "Docker"],
+      "github": "https://github.com/pascal-eloumou/etl-pipeline",
+      "demo": null,
+      "image": "project2.jpg"
+    }
+  ],
+  "contact": {
+    "form_enabled": true,
+    "email_endpoint": "/api/contact",
+    "social_sharing": true
+  },
+  "seo": {
+    "title": "Pascal Eloumou - Data Analyst & Expert IA | Machine Learning Python SQL",
+    "description": "Data Analyst expert avec 10 ans d'expérience en Machine Learning, Python, SQL, Snowflake et Power BI. Spécialisé en analyse prédictive et automatisation ETL.",
+    "keywords": "Data Analyst, Machine Learning, Python, SQL, Snowflake, Power BI, BigQuery, Intelligence Artificielle, ETL, Data Science",
+    "canonical_url": "https://pascal-eloumou-data-analyst.com",
+    "og_image": "og-image.jpg"
+  }
+}

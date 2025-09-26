@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saisie des données CV - Pascal Aurèle Eloumou</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .form-container {
+            padding: 40px;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        input, textarea, select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e1e8ed;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+        }
+        
+        .section-title {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Saisie des données pour votre CV</h1>
+            <p>Veuillez remplir les informations ci-dessous pour personnaliser votre site CV</p>
+        </div>
+        
+        <div class="form-container">
+            <form id="cvForm">
+                <div class="section-title">Informations personnelles</div>
+                
+                <div class="row">
+                    <div class="form-group">
+                        <label for="firstName">Prénom *</label>
+                        <input type="text" id="firstName" name="firstName" value="Pascal Aurèle" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Nom *</label>
+                        <input type="text" id="lastName" name="lastName" value="Eloumou" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="title">Titre professionnel *</label>
+                    <input type="text" id="title" name="title" placeholder="Ex: Développeur Full Stack, Ingénieur Logiciel..." required>
+                </div>
+                
+                <div class="row">
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="form-group">
+                        <label for="location">Localisation</label>
+                        <input type="text" id="location" name="location" placeholder="Ville, Pays">
+                    </div>
+                    <div class="form-group">
+                        <label for="linkedin">LinkedIn</label>
+                        <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/votre-profil">
+                    </div>
+                </div>
+                
+                <div class="section-title">À propos</div>
+                <div class="form-group">
+                    <label for="about">Description professionnelle *</label>
+                    <textarea id="about" name="about" placeholder="Décrivez votre profil professionnel, vos compétences clés et vos objectifs..." required></textarea>
+                </div>
+                
+                <div class="section-title">Expérience professionnelle</div>
+                <div class="form-group">
+                    <label for="experience">Expériences (une par ligne) *</label>
+                    <textarea id="experience" name="experience" placeholder="Format: Poste | Entreprise | Période | Description\nEx: Développeur Senior | TechCorp | 2020-2023 | Développement d'applications web..." required></textarea>
+                </div>
+                
+                <div class="section-title">Formation</div>
+                <div class="form-group">
+                    <label for="education">Formation (une par ligne)</label>
+                    <textarea id="education" name="education" placeholder="Format: Diplôme | École | Année\nEx: Master Informatique | Université XYZ | 2018"></textarea>
+                </div>
+                
+                <div class="section-title">Compétences</div>
+                <div class="form-group">
+                    <label for="skills">Compétences techniques (séparées par des virgules) *</label>
+                    <textarea id="skills" name="skills" placeholder="Ex: JavaScript, Python, React, Node.js, SQL, Git..." required></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Générer mon CV</button>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('cvForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Collecter toutes les données du formulaire
+            const formData = new FormData(this);
+            const data = {};
+            
+            for (let [key, value] of formData.entries()) {
+                data[key] = value;
+            }
+            
+            // Sauvegarder dans localStorage pour utilisation ultérieure
+            localStorage.setItem('cvData', JSON.stringify(data));
+            
+            // Afficher un message de confirmation
+            alert('Données sauvegardées! Vous pouvez maintenant fermer cette page et demander à l\'assistant de mettre à jour votre CV.');
+            
+            // Optionnel: rediriger vers le CV
+            window.location.href = 'index.html';
+        });
+        
+        // Charger les données existantes si disponibles
+        window.addEventListener('load', function() {
+            const savedData = localStorage.getItem('cvData');
+            if (savedData) {
+                const data = JSON.parse(savedData);
+                for (let key in data) {
+                    const element = document.getElementById(key);
+                    if (element) {
+                        element.value = data[key];
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "pascal-eloumou-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio professionnel de Pascal Aurele ELOUMOU - Data Analyst & BI Developer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "data-analyst",
+    "bi-developer",
+    "pascal-eloumou"
+  ],
+  "author": "Pascal Aurele ELOUMOU",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
