@@ -311,6 +311,15 @@ section {
     text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
     animation: starGlow 2s ease-in-out infinite alternate;
 }
+.skill-rating .gold {
+  color: gold;    /* ou color: #FFD700; */
+  font-size: 1.5rem;
+}
+
+.skill-rating .grey {
+  color: #d3d3d3; /* gris clair */
+  font-size: 1.5rem;
+}
 
 @keyframes skillFloat {
     0%, 100% { transform: translateY(0px); }

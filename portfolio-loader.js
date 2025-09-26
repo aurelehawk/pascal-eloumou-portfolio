@@ -25,7 +25,7 @@ class PortfolioLoader {
     async loadData() {
         try {
             console.log('Attempting to load portfolio data...');
-            const response = await fetch('./portfolio-data.json');
+            const response = await fetch('./data/portfolio-data.json');
             console.log('Response status:', response.status, response.statusText);
             
             if (!response.ok) {
