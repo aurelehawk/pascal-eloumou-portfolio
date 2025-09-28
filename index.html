@@ -929,7 +929,7 @@
         </div>
     </footer>
 
-    <script src="portfolio-loader.js"></script>
+    <!-- <script src="portfolio-loader.js"></script> -->
     <script src="script.js"></script>
     
     <!-- Translation System -->
@@ -945,11 +945,10 @@
                 'Contact et Disponibilité': 'Contact et Disponibilité',
                 
                 // Hero section
-                'Pascal Aurèle Eloumou': 'Pascal Aurèle Eloumou',
-                'Expert Data Science & Intelligence Artificielle': 'Expert Data Science & Intelligence Artificielle',
-                'Spécialisé en Machine Learning, Python et solutions IA avancées': 'Spécialisé en Machine Learning, Python et solutions IA avancées',
-                'Voir mon CV': 'Voir mon CV',
-                'Me Contacter': 'Me Contacter',
+                'Data & AI Solutions Analyst': 'Data & AI Solutions Analyst',
+                'Spécialisé en analyse de données avancées et boostée par l\'intelligence artificielle et solutions cloud. Certifié Dataiku avec une maîtrise complète des technologies modernes d\'ETL, du machine learning et des environnements cloud (GCP, Azure).': 'Spécialisé en analyse de données avancées et boostée par l\'intelligence artificielle et solutions cloud. Certifié Dataiku avec une maîtrise complète des technologies modernes d\'ETL, du machine learning et des environnements cloud (GCP, Azure).',
+                'Découvrir mes compétences': 'Découvrir mes compétences',
+                'Me contacter': 'Me contacter',
                 
                 // Skills section
                 'Compétences Techniques': 'Compétences Techniques',
@@ -959,12 +958,21 @@
                 
                 // Experience section
                 'Expérience Professionnelle': 'Expérience Professionnelle',
+                'Data & AI Solutions Analyst': 'Data & AI Solutions Analyst',
+                'Développement et déploiement de solutions d\'analyse de données avancées': 'Développement et déploiement de solutions d\'analyse de données avancées',
+                'Création de pipelines ETL robustes et automatisés': 'Création de pipelines ETL robustes et automatisés',
+                'Implémentation de modèles de machine learning en production': 'Implémentation de modèles de machine learning en production',
+                'Optimisation des performances des requêtes SQL complexes': 'Optimisation des performances des requêtes SQL complexes',
+                'Collaboration étroite avec les équipes métier pour définir les KPIs': 'Collaboration étroite avec les équipes métier pour définir les KPIs',
                 
                 // Formation section
                 'Formations, Diplômes': 'Formations, Diplômes',
                 'Master 2 Data & IA': 'Master 2 Data & IA',
+                'Spécialisation en Intelligence Artificielle et Big Data': 'Spécialisation en Intelligence Artificielle et Big Data',
                 'MBA1 Data Science': 'MBA1 Data Science',
+                'Formation approfondie en science des données et analytics': 'Formation approfondie en science des données et analytics',
                 'Licence pro système et réseau': 'Licence pro système et réseau',
+                'Fondamentaux en infrastructure IT et réseaux': 'Fondamentaux en infrastructure IT et réseaux',
                 
                 // Contact section
                 'Contactez-moi': 'Contactez-moi',
@@ -980,11 +988,10 @@
                 'Contact et Disponibilité': 'Contact & Availability',
                 
                 // Hero section
-                'Pascal Aurèle Eloumou': 'Pascal Aurèle Eloumou',
-                'Expert Data Science & Intelligence Artificielle': 'Data Science & Artificial Intelligence Expert',
-                'Spécialisé en Machine Learning, Python et solutions IA avancées': 'Specialized in Machine Learning, Python and advanced AI solutions',
-                'Voir mon CV': 'View my Resume',
-                'Me Contacter': 'Contact Me',
+                'Data & AI Solutions Analyst': 'Data & AI Solutions Analyst',
+                'Spécialisé en analyse de données avancées et boostée par l\'intelligence artificielle et solutions cloud. Certifié Dataiku avec une maîtrise complète des technologies modernes d\'ETL, du machine learning et des environnements cloud (GCP, Azure).': 'Specialized in advanced data analysis powered by artificial intelligence and cloud solutions. Dataiku certified with complete mastery of modern ETL technologies, machine learning and cloud environments (GCP, Azure).',
+                'Découvrir mes compétences': 'Discover my skills',
+                'Me contacter': 'Contact me',
                 
                 // Skills section
                 'Compétences Techniques': 'Technical Skills',
@@ -994,12 +1001,21 @@
                 
                 // Experience section
                 'Expérience Professionnelle': 'Professional Experience',
+                'Data & AI Solutions Analyst': 'Data & AI Solutions Analyst',
+                'Développement et déploiement de solutions d\'analyse de données avancées': 'Development and deployment of advanced data analysis solutions',
+                'Création de pipelines ETL robustes et automatisés': 'Creation of robust and automated ETL pipelines',
+                'Implémentation de modèles de machine learning en production': 'Implementation of machine learning models in production',
+                'Optimisation des performances des requêtes SQL complexes': 'Optimization of complex SQL query performance',
+                'Collaboration étroite avec les équipes métier pour définir les KPIs': 'Close collaboration with business teams to define KPIs',
                 
                 // Formation section
                 'Formations, Diplômes': 'Education & Degrees',
                 'Master 2 Data & IA': 'Master 2 Data & AI',
+                'Spécialisation en Intelligence Artificielle et Big Data': 'Specialization in Artificial Intelligence and Big Data',
                 'MBA1 Data Science': 'MBA1 Data Science',
+                'Formation approfondie en science des données et analytics': 'In-depth training in data science and analytics',
                 'Licence pro système et réseau': 'Professional License in Systems & Networks',
+                'Fondamentaux en infrastructure IT et réseaux': 'Fundamentals in IT infrastructure and networks',
                 
                 // Contact section
                 'Contactez-moi': 'Contact me',
@@ -1012,12 +1028,55 @@
 
         function translatePage(lang) {
             currentLang = lang;
-            const elements = document.querySelectorAll('[data-translate], h1, h2, h3, p, a, span, button');
             
-            elements.forEach(element => {
-                const key = element.getAttribute('data-translate') || element.textContent.trim();
-                if (translations[lang] && translations[lang][key]) {
-                    element.textContent = translations[lang][key];
+            // Translate navigation
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                const text = link.textContent.trim();
+                if (translations[lang][text]) {
+                    link.textContent = translations[lang][text];
+                }
+            });
+            
+            // Translate hero section
+            const subtitle = document.querySelector('.subtitle');
+            if (subtitle && translations[lang][subtitle.textContent.trim()]) {
+                subtitle.textContent = translations[lang][subtitle.textContent.trim()];
+            }
+            
+            const description = document.querySelector('.description');
+            if (description && translations[lang][description.textContent.trim()]) {
+                description.textContent = translations[lang][description.textContent.trim()];
+            }
+            
+            // Translate buttons
+            document.querySelectorAll('.btn').forEach(btn => {
+                const text = btn.textContent.trim().replace(/^\s*[\w\s]*\s+/, ''); // Remove icon
+                const iconMatch = btn.innerHTML.match(/<i[^>]*><\/i>\s*/);
+                const icon = iconMatch ? iconMatch[0] : '';
+                
+                if (text === 'Découvrir mes compétences' || text === 'Discover my skills') {
+                    btn.innerHTML = icon + translations[lang]['Découvrir mes compétences'];
+                } else if (text === 'Me contacter' || text === 'Contact me') {
+                    btn.innerHTML = icon + translations[lang]['Me contacter'];
+                }
+            });
+            
+            // Translate section titles
+            document.querySelectorAll('.section-title, h2, h3').forEach(title => {
+                const text = title.textContent.trim().replace(/^\s*[\w\s]*\s+/, ''); // Remove icon
+                const iconMatch = title.innerHTML.match(/<i[^>]*><\/i>\s*/);
+                const icon = iconMatch ? iconMatch[0] : '';
+                
+                if (translations[lang][text]) {
+                    title.innerHTML = icon + translations[lang][text];
+                }
+            });
+            
+            // Translate experience descriptions
+            document.querySelectorAll('.experience-item li, .education-item p').forEach(item => {
+                const text = item.textContent.trim();
+                if (translations[lang][text]) {
+                    item.textContent = translations[lang][text];
                 }
             });
 
