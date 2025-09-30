@@ -324,7 +324,11 @@
         <div class="admin-grid">
             <aside class="admin-sidebar">
                 <ul class="sidebar-menu">
-                    <li><a href="#" data-section="profile" class="active">
+                    <li><a href="#" data-section="dashboard" class="active">
+                        <i class="fas fa-chart-dashboard"></i>
+                        Tableau de bord
+                    </a></li>
+                    <li><a href="#" data-section="profile">
                         <i class="fas fa-user"></i>
                         Profil
                     </a></li>
@@ -344,9 +348,17 @@
                         <i class="fas fa-project-diagram"></i>
                         Projets
                     </a></li>
+                    <li><a href="#" data-section="visitors">
+                        <i class="fas fa-users"></i>
+                        Visiteurs
+                    </a></li>
                     <li><a href="#" data-section="seo">
                         <i class="fas fa-search"></i>
                         SEO
+                    </a></li>
+                    <li><a href="#" data-section="settings">
+                        <i class="fas fa-cog"></i>
+                        Paramètres
                     </a></li>
                 </ul>
             </aside>
@@ -359,6 +371,7 @@
         </div>
     </div>
 
+    <script src="database.js"></script>
     <script src="upload-handler.js"></script>
     <script src="preview-system.js"></script>
     <script src="admin.js"></script>
